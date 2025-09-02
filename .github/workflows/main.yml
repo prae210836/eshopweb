@@ -8,7 +8,7 @@ on:
       - main
 jobs:
   build-and-push:
-    runs-on: ubunti-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -23,4 +23,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/eshopweb:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/eshowweb:latest
